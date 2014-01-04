@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "React examples",
   "dependencies": {
-    "react": "https://github.com/facebook/react/tarball/master"
+     "React": "git://github.com/facebook/react.git",
+     "react-page-middleware": "git://github.com/facebook/react-page-middleware.git",
+     "connect": "2.8.3"
   },
   "devDependencies": {
     "jsx-loader": "https://github.com/petehunt/jsx-loader/tarball/master",
