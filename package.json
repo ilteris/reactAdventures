@@ -3,10 +3,14 @@
   "version": "0.0.1",
   "description": "React examples",
   "dependencies": {
-    "react": "http://petehunt.net/react/react-0.5.1.tar.gz"  
+    "react": "http://petehunt.net/facebook/react/tarball/master"
   },
   "devDependencies": {
-    "webpack": "~0.11.18"
+    "jsx-loader": "https://github.com/petehunt/jsx-loader/tarball/master",
+    "webpack": "~0.11.18",
+    "url-loader": "~0.5.2",
+    "css-loader": "~0.6.6",
+    "style-loader": "~0.6.0"
   },
   "scripts": {
     "start": "webpack --watch --debug src/main.js build/main.js"
