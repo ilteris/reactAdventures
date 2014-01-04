@@ -2,25 +2,16 @@
   "name": "ReactAdventures",
   "version": "0.1.0",
   "description": "React examples",
+  "main": "index.js",
+  "start": "node server.js",
   "dependencies": {
 	  "React": "git://github.com/facebook/react.git",
     "react-styles": "git://github.com/hedgerwang/react-styles.git",
+	"react-page-middleware": "git://github.com/facebook/react-page-middleware.git",
     "optimist": "0.6.0",
-    "react-page-middleware": "git://github.com/facebook/react-page-middleware.git",
     "connect": "2.8.3"
   },
-  "devDependencies": {
-    "jsx-loader": "https://github.com/petehunt/jsx-loader/tarball/master",
-    "webpack": "~1.0.0-beta4",
-    "url-loader": "~0.5.2",
-    "css-loader": "~0.6.6",
-    "style-loader": "~0.6.0",
-    "webpack-dev-server": "~1.0.0"
-  },
-  "scripts": {
-    "start": "webpack --watch --debug src/main.js build/main.js"
-  },
-  "engines": {
+ "engines": {
    	"node": ">=0.10.0"
   },
   "author": "",
