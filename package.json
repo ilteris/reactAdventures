@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "React examples",
   "dependencies": {
-    "react": "http://petehunt.net/facebook/react/tarball/master"
+    "react": "https://github.com/facebook/react/tarball/master"
   },
   "devDependencies": {
     "jsx-loader": "https://github.com/petehunt/jsx-loader/tarball/master",
