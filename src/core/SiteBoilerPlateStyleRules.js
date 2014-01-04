@@ -12,24 +12,15 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
- * @jsx React.DOM
  */
+"use strict";
 
-var Banner = require('./elements/Banner/Banner.js');
-var React = require('React');
-var SiteBoilerPlate = require('./core/SiteBoilerPlate.js');
-var VectorWidget = require('./elements/VectorWidget/VectorWidget.js');
+var ReactStyle = require('ReactStyle');
 
-var index = React.createClass({
-  render: function() {
-    return (
-      <SiteBoilerPlate>
-        <Banner bannerMessage="React"/>
-        <VectorWidget />
-      </SiteBoilerPlate>
-    );
+var SiteBoilerPlateStyleRules = ReactStyle.create({
+  '*': {
+    boxSizing: 'border-box'
   }
 });
 
-module.exports = index;
+module.exports = SiteBoilerPlateStyleRules;

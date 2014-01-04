@@ -12,24 +12,28 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
- * @jsx React.DOM
  */
+"use strict";
 
-var Banner = require('./elements/Banner/Banner.js');
-var React = require('React');
-var SiteBoilerPlate = require('./core/SiteBoilerPlate.js');
-var VectorWidget = require('./elements/VectorWidget/VectorWidget.js');
+var ReactStyle = require('ReactStyle');
 
-var index = React.createClass({
-  render: function() {
-    return (
-      <SiteBoilerPlate>
-        <Banner bannerMessage="React"/>
-        <VectorWidget />
-      </SiteBoilerPlate>
-    );
+var BannerStyleRules = ReactStyle.create({
+  'h1.banner': {
+    opacity: '0',
+    fontFamily: 'Helvetica',
+    color: '#444',
+    fontWeight: 'bold',
+    marginTop: '60px',
+    marginBottom: '0',
+    textAlign: 'center',
+    '-webkit-user-select': 'none',
+    fontSize: '5vh', /* Chrome bug prevents resizing on window resize! */
+    width: '100%'    /* Putting width 100% causes repaint on resize */
+  },
+  'h1.banner.fadeIn': {
+    opacity: '1',
+    transition: 'opacity 3s ease-in'
   }
 });
 
-module.exports = index;
+module.exports = BannerStyleRules;
