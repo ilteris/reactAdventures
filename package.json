@@ -4,6 +4,7 @@
   "description": "React examples",
   "main": "index.js",
   "scripts": {
+    "start": "webpack --watch --debug src/main.js build/main.js"  
   },
   "author": "",
   "license": "BSD"
