@@ -2,7 +2,9 @@
   "name": "React",
   "version": "0.0.0",
   "description": "React examples",
-  "main": "index.js",
+  "dependencies": {
+    "react": "http://petehunt.net/react/react-0.5.1.tar.gz"  
+  }
   "scripts": {
     "start": "webpack --watch --debug src/main.js build/main.js"
   },
