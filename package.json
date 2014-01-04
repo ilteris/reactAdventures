@@ -1,16 +1,16 @@
 {
-  "name": "React",
-  "version": "0.0.0",
+  "name": "ReactAdventures",
+  "version": "0.0.1",
   "description": "React examples",
   "dependencies": {
     "react": "http://petehunt.net/react/react-0.5.1.tar.gz"  
-  }
+  },
+  "devDependencies": {
+    "webpack": "~0.11.18"
+  },
   "scripts": {
     "start": "webpack --watch --debug src/main.js build/main.js"
   },
   "author": "",
   "license": "BSD",
-  "devDependencies": {
-    "webpack": "~0.11.18"
-  }
 }
